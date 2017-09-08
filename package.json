@@ -1,0 +1,13 @@
+{
+  "name": "@wm/rate",
+  "main": "lib/index.js",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "fde start",
+    "build": "fde build"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "prop-types": "^15.5.8"
+  }
+}

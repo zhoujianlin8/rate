@@ -1,0 +1,92 @@
+$rate-prefix-cls: wm-rate;
+$rate-star-color: #f5a623;
+$font-size-base: 13px;
+
+.#{$rate-prefix-cls} {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: normal;
+    font-style: normal;
+
+&-disabled &-star {
+    &:before,
+    &-content:before {
+        cursor: default;
+    }
+    &:hover {
+        transform: scale(1);
+    }
+}
+
+&-star {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    transition: all .3s;
+    color: #e9e9e9;
+    cursor: pointer;
+    line-height: 1.5;
+
+    &-first,
+    &-second {
+        transition: all .3s;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &-second {
+        position: absolute;
+        left: 0;
+        top: 0;
+       // width: 100%;
+        height: 100%;
+        overflow: hidden;
+        opacity: 1;
+    }
+
+    &-1 &-second{
+        width: 10%;
+    }
+    &-2 &-second{
+        width: 20%;
+    }
+    &-3 &-second{
+        width: 30%;
+    }
+    &-4 &-second{
+        width: 40%;
+    }
+    &-5 &-second{
+        width: 50%;
+    }
+    &-6 &-second{
+        width: 60%;
+    }
+    &-7 &-second{
+        width: 70%;
+    }
+    &-8 &-second{
+        width: 80%;
+    }
+    &-9 &-second{
+        width: 90%;
+    }
+
+    &-full &-second , &-half &-second {
+        color: $rate-star-color;
+    }
+    &-half:hover &-first,
+    &-full:hover &-second {
+        color: $rate-star-color;
+    }
+}
+}
+
