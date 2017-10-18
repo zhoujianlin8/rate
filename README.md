@@ -1,4 +1,4 @@
-### rate安装
+###rate安装
 package.json
 
 `````
@@ -8,6 +8,7 @@ package.json
 
 ````
 import Rate from '@wm/rate'
+import '@wm/rate/lib/index.scss'
 <Rate value = {2.3} disabled = {true}>
 
 

@@ -40,7 +40,7 @@ body * {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-size: 18px;
+  font-size: 14px;
   display: inline-block;
   vertical-align: middle;
   font-weight: normal;
@@ -53,12 +53,11 @@ body * {
     margin: 0;
     padding: 0;
     display: inline-block;
-    margin-right: 8px;
+    margin-right: 4px;
     position: relative;
     transition: all .3s;
-    color: #e9e9e9;
-    cursor: pointer;
-    line-height: 1.5; }
+    color: #DBDBDB;
+    cursor: pointer; }
     .wm-rate-star-first, .wm-rate-star-second {
       transition: all .3s; }
     .wm-rate-star:hover {
@@ -89,7 +88,7 @@ body * {
     .wm-rate-star-9 .wm-rate-star-second {
       width: 90%; }
     .wm-rate-star-full .wm-rate-star-second, .wm-rate-star-half .wm-rate-star-second {
-      color: #f5a623; }
+      color: #FEC12B; }
     .wm-rate-star-half:hover .wm-rate-star-first,
     .wm-rate-star-full:hover .wm-rate-star-second {
-      color: #f5a623; }
+      color: #FEC12B; }
